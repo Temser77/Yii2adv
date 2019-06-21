@@ -1,0 +1,483 @@
+2019-06-21 07:11:38 [::1][-][jhvs9du9nbrpgdpr838t1504nq][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\controllers\TaskManagerController' in file: C:\Data\xampp\htdocs\yii2adv/frontend/controllers/TaskManagerController.php. Namespace missing? in C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Module.php(637): class_exists('frontend\\contro...')
+#3 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Module.php(596): yii\base\Module->createControllerByID('task-manager')
+#4 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createController('')
+#5 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task-manager', Array)
+#6 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Data\xampp\htdocs\yii2adv\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2019-06-21 07:11:38 [::1][-][jhvs9du9nbrpgdpr838t1504nq][info][application] $_GET = [
+    'r' => 'task-manager'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Phpstorm-8b91aacf' => 'd6ca3562-dd80-42f1-8869-5f5bbda5d444'
+    'XDEBUG_SESSION' => 'XDEBUG_ECLIPSE'
+    'PHPSESSID' => 'fcrv8ik0fpsab03dus6591oq1r'
+    '_identity' => '9c4545b88e03a3bc71af2be96a764dd14f0bb4244bb79557b4a7b743bbf3b6e5a:2:{i:0;s:9:\"_identity\";i:1;s:22:\"[1,\"test1key\",2592000]\";}'
+    '_csrf' => 'b65f7c34aa2b8bb989d282489e6094aeb7930021c4862964de48833763adc860a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JgJqVCLBEVro2EfSKamqi_t_bDRn7ZO_\";}'
+    'advanced-frontend' => 'jhvs9du9nbrpgdpr838t1504nq'
+    '_csrf-frontend' => 'cf7e61d6bed72e82995204b0e13e88ff3a0bcfcf56fdfed0d6e98a2cb3b7a9d8a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aGIW7sPA6_aGn0JnIKH8p0IAIbMpo0Eu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/Data/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/Data/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'Phpstorm-8b91aacf=d6ca3562-dd80-42f1-8869-5f5bbda5d444; XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=fcrv8ik0fpsab03dus6591oq1r; _identity=9c4545b88e03a3bc71af2be96a764dd14f0bb4244bb79557b4a7b743bbf3b6e5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A22%3A%22%5B1%2C%22test1key%22%2C2592000%5D%22%3B%7D; _csrf=b65f7c34aa2b8bb989d282489e6094aeb7930021c4862964de48833763adc860a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JgJqVCLBEVro2EfSKamqi_t_bDRn7ZO_%22%3B%7D; advanced-frontend=jhvs9du9nbrpgdpr838t1504nq; _csrf-frontend=cf7e61d6bed72e82995204b0e13e88ff3a0bcfcf56fdfed0d6e98a2cb3b7a9d8a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aGIW7sPA6_aGn0JnIKH8p0IAIbMpo0Eu%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\MySQL\\MySQL Server 5.5\\bin;C:\\Users\\post.user14\\AppData\\Roaming\\npm;C:\\Users\\post.user14\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Data\\composer;C:\\Users\\post.user14\\AppData\\Local\\Programs\\Git\\cmd;C:\\Data\\xampp\\php'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win32) OpenSSL/1.1.1a PHP/7.2.15 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win32) OpenSSL/1.1.1a PHP/7.2.15'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Data/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Data/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Data/xampp/htdocs/yii2adv/frontend/web/index.php'
+    'REMOTE_PORT' => '63700'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=task-manager'
+    'REQUEST_URI' => '/yii2adv/frontend/web/index.php?r=task-manager'
+    'SCRIPT_NAME' => '/yii2adv/frontend/web/index.php'
+    'PHP_SELF' => '/yii2adv/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1561093897.665
+    'REQUEST_TIME' => 1561093897
+]
+2019-06-21 07:26:40 [::1][1][dj3q530plv17i5g34j3sni0to1][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\controllers\TaskManagerController' in file: C:\Data\xampp\htdocs\yii2adv/frontend/controllers/TaskManagerController.php. Namespace missing? in C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Module.php(637): class_exists('frontend\\contro...')
+#3 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Module.php(596): yii\base\Module->createControllerByID('task-manager')
+#4 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createController('')
+#5 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task-manager', Array)
+#6 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Data\xampp\htdocs\yii2adv\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2019-06-21 07:26:40 [::1][1][dj3q530plv17i5g34j3sni0to1][info][application] $_GET = [
+    'r' => 'task-manager'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Phpstorm-8b91aacf' => 'd6ca3562-dd80-42f1-8869-5f5bbda5d444'
+    'XDEBUG_SESSION' => 'XDEBUG_ECLIPSE'
+    'PHPSESSID' => 'fcrv8ik0fpsab03dus6591oq1r'
+    '_identity' => '9c4545b88e03a3bc71af2be96a764dd14f0bb4244bb79557b4a7b743bbf3b6e5a:2:{i:0;s:9:\"_identity\";i:1;s:22:\"[1,\"test1key\",2592000]\";}'
+    '_csrf' => 'b65f7c34aa2b8bb989d282489e6094aeb7930021c4862964de48833763adc860a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JgJqVCLBEVro2EfSKamqi_t_bDRn7ZO_\";}'
+    'advanced-frontend' => 'dj3q530plv17i5g34j3sni0to1'
+    '_identity-frontend' => '08aa3b694b18ffe64f4d925aae3bab9aa255f387c4d799c7f70a7659ad22c6f3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"_MwODlbbxweEMwcG14oy19wmggD8deIk\",2592000]\";}'
+    '_csrf-frontend' => 'd263fdefe3fbda90d82883613bcbdc2761c796d7cdac62710d90d053e3921f35a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FU_JouR2kR44YnfGOJ8I3kGxNR8sBesb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/Data/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/Data/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'Phpstorm-8b91aacf=d6ca3562-dd80-42f1-8869-5f5bbda5d444; XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=fcrv8ik0fpsab03dus6591oq1r; _identity=9c4545b88e03a3bc71af2be96a764dd14f0bb4244bb79557b4a7b743bbf3b6e5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A22%3A%22%5B1%2C%22test1key%22%2C2592000%5D%22%3B%7D; _csrf=b65f7c34aa2b8bb989d282489e6094aeb7930021c4862964de48833763adc860a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JgJqVCLBEVro2EfSKamqi_t_bDRn7ZO_%22%3B%7D; advanced-frontend=dj3q530plv17i5g34j3sni0to1; _identity-frontend=08aa3b694b18ffe64f4d925aae3bab9aa255f387c4d799c7f70a7659ad22c6f3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22_MwODlbbxweEMwcG14oy19wmggD8deIk%22%2C2592000%5D%22%3B%7D; _csrf-frontend=d263fdefe3fbda90d82883613bcbdc2761c796d7cdac62710d90d053e3921f35a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FU_JouR2kR44YnfGOJ8I3kGxNR8sBesb%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\MySQL\\MySQL Server 5.5\\bin;C:\\Users\\post.user14\\AppData\\Roaming\\npm;C:\\Users\\post.user14\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Data\\composer;C:\\Users\\post.user14\\AppData\\Local\\Programs\\Git\\cmd;C:\\Data\\xampp\\php'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win32) OpenSSL/1.1.1a PHP/7.2.15 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win32) OpenSSL/1.1.1a PHP/7.2.15'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Data/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Data/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Data/xampp/htdocs/yii2adv/frontend/web/index.php'
+    'REMOTE_PORT' => '64463'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=task-manager'
+    'REQUEST_URI' => '/yii2adv/frontend/web/index.php?r=task-manager'
+    'SCRIPT_NAME' => '/yii2adv/frontend/web/index.php'
+    'PHP_SELF' => '/yii2adv/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1561094799.637
+    'REQUEST_TIME' => 1561094799
+]
+2019-06-21 07:29:17 [::1][1][dj3q530plv17i5g34j3sni0to1][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\controllers\TaskManagerController' in file: C:\Data\xampp\htdocs\yii2adv/frontend/controllers/TaskManagerController.php. Namespace missing? in C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Module.php(637): class_exists('frontend\\contro...')
+#3 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Module.php(596): yii\base\Module->createControllerByID('task-manager')
+#4 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createController('')
+#5 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task-manager', Array)
+#6 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Data\xampp\htdocs\yii2adv\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2019-06-21 07:29:16 [::1][1][dj3q530plv17i5g34j3sni0to1][info][application] $_GET = [
+    'r' => 'task-manager'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Phpstorm-8b91aacf' => 'd6ca3562-dd80-42f1-8869-5f5bbda5d444'
+    'XDEBUG_SESSION' => 'XDEBUG_ECLIPSE'
+    'PHPSESSID' => 'fcrv8ik0fpsab03dus6591oq1r'
+    '_identity' => '9c4545b88e03a3bc71af2be96a764dd14f0bb4244bb79557b4a7b743bbf3b6e5a:2:{i:0;s:9:\"_identity\";i:1;s:22:\"[1,\"test1key\",2592000]\";}'
+    '_csrf' => 'b65f7c34aa2b8bb989d282489e6094aeb7930021c4862964de48833763adc860a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JgJqVCLBEVro2EfSKamqi_t_bDRn7ZO_\";}'
+    'advanced-frontend' => 'dj3q530plv17i5g34j3sni0to1'
+    '_identity-frontend' => '08aa3b694b18ffe64f4d925aae3bab9aa255f387c4d799c7f70a7659ad22c6f3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"_MwODlbbxweEMwcG14oy19wmggD8deIk\",2592000]\";}'
+    '_csrf-frontend' => 'd263fdefe3fbda90d82883613bcbdc2761c796d7cdac62710d90d053e3921f35a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FU_JouR2kR44YnfGOJ8I3kGxNR8sBesb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/Data/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/Data/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'Phpstorm-8b91aacf=d6ca3562-dd80-42f1-8869-5f5bbda5d444; XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=fcrv8ik0fpsab03dus6591oq1r; _identity=9c4545b88e03a3bc71af2be96a764dd14f0bb4244bb79557b4a7b743bbf3b6e5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A22%3A%22%5B1%2C%22test1key%22%2C2592000%5D%22%3B%7D; _csrf=b65f7c34aa2b8bb989d282489e6094aeb7930021c4862964de48833763adc860a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JgJqVCLBEVro2EfSKamqi_t_bDRn7ZO_%22%3B%7D; advanced-frontend=dj3q530plv17i5g34j3sni0to1; _identity-frontend=08aa3b694b18ffe64f4d925aae3bab9aa255f387c4d799c7f70a7659ad22c6f3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22_MwODlbbxweEMwcG14oy19wmggD8deIk%22%2C2592000%5D%22%3B%7D; _csrf-frontend=d263fdefe3fbda90d82883613bcbdc2761c796d7cdac62710d90d053e3921f35a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FU_JouR2kR44YnfGOJ8I3kGxNR8sBesb%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\MySQL\\MySQL Server 5.5\\bin;C:\\Users\\post.user14\\AppData\\Roaming\\npm;C:\\Users\\post.user14\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Data\\composer;C:\\Users\\post.user14\\AppData\\Local\\Programs\\Git\\cmd;C:\\Data\\xampp\\php'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win32) OpenSSL/1.1.1a PHP/7.2.15 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win32) OpenSSL/1.1.1a PHP/7.2.15'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Data/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Data/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Data/xampp/htdocs/yii2adv/frontend/web/index.php'
+    'REMOTE_PORT' => '64519'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=task-manager'
+    'REQUEST_URI' => '/yii2adv/frontend/web/index.php?r=task-manager'
+    'SCRIPT_NAME' => '/yii2adv/frontend/web/index.php'
+    'PHP_SELF' => '/yii2adv/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1561094956.111
+    'REQUEST_TIME' => 1561094956
+]
+2019-06-21 07:31:02 [::1][1][dj3q530plv17i5g34j3sni0to1][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\controllers\TaskManagerController' in file: C:\Data\xampp\htdocs\yii2adv/frontend/controllers/TaskManagerController.php. Namespace missing? in C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Module.php(637): class_exists('frontend\\contro...')
+#3 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Module.php(596): yii\base\Module->createControllerByID('task-manager')
+#4 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createController('')
+#5 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task-manager', Array)
+#6 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Data\xampp\htdocs\yii2adv\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2019-06-21 07:31:01 [::1][1][dj3q530plv17i5g34j3sni0to1][info][application] $_GET = [
+    'r' => 'task-manager'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Phpstorm-8b91aacf' => 'd6ca3562-dd80-42f1-8869-5f5bbda5d444'
+    'XDEBUG_SESSION' => 'XDEBUG_ECLIPSE'
+    'PHPSESSID' => 'fcrv8ik0fpsab03dus6591oq1r'
+    '_identity' => '9c4545b88e03a3bc71af2be96a764dd14f0bb4244bb79557b4a7b743bbf3b6e5a:2:{i:0;s:9:\"_identity\";i:1;s:22:\"[1,\"test1key\",2592000]\";}'
+    '_csrf' => 'b65f7c34aa2b8bb989d282489e6094aeb7930021c4862964de48833763adc860a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JgJqVCLBEVro2EfSKamqi_t_bDRn7ZO_\";}'
+    'advanced-frontend' => 'dj3q530plv17i5g34j3sni0to1'
+    '_identity-frontend' => '08aa3b694b18ffe64f4d925aae3bab9aa255f387c4d799c7f70a7659ad22c6f3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"_MwODlbbxweEMwcG14oy19wmggD8deIk\",2592000]\";}'
+    '_csrf-frontend' => 'd263fdefe3fbda90d82883613bcbdc2761c796d7cdac62710d90d053e3921f35a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FU_JouR2kR44YnfGOJ8I3kGxNR8sBesb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/Data/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/Data/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'Phpstorm-8b91aacf=d6ca3562-dd80-42f1-8869-5f5bbda5d444; XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=fcrv8ik0fpsab03dus6591oq1r; _identity=9c4545b88e03a3bc71af2be96a764dd14f0bb4244bb79557b4a7b743bbf3b6e5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A22%3A%22%5B1%2C%22test1key%22%2C2592000%5D%22%3B%7D; _csrf=b65f7c34aa2b8bb989d282489e6094aeb7930021c4862964de48833763adc860a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JgJqVCLBEVro2EfSKamqi_t_bDRn7ZO_%22%3B%7D; advanced-frontend=dj3q530plv17i5g34j3sni0to1; _identity-frontend=08aa3b694b18ffe64f4d925aae3bab9aa255f387c4d799c7f70a7659ad22c6f3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22_MwODlbbxweEMwcG14oy19wmggD8deIk%22%2C2592000%5D%22%3B%7D; _csrf-frontend=d263fdefe3fbda90d82883613bcbdc2761c796d7cdac62710d90d053e3921f35a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FU_JouR2kR44YnfGOJ8I3kGxNR8sBesb%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\MySQL\\MySQL Server 5.5\\bin;C:\\Users\\post.user14\\AppData\\Roaming\\npm;C:\\Users\\post.user14\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Data\\composer;C:\\Users\\post.user14\\AppData\\Local\\Programs\\Git\\cmd;C:\\Data\\xampp\\php'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win32) OpenSSL/1.1.1a PHP/7.2.15 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win32) OpenSSL/1.1.1a PHP/7.2.15'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Data/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Data/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Data/xampp/htdocs/yii2adv/frontend/web/index.php'
+    'REMOTE_PORT' => '64572'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=task-manager'
+    'REQUEST_URI' => '/yii2adv/frontend/web/index.php?r=task-manager'
+    'SCRIPT_NAME' => '/yii2adv/frontend/web/index.php'
+    'PHP_SELF' => '/yii2adv/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1561095061.384
+    'REQUEST_TIME' => 1561095061
+]
+2019-06-21 07:31:46 [::1][1][dj3q530plv17i5g34j3sni0to1][error][Error] Error: Class 'app\widgets\TaskPreview' not found in C:\Data\xampp\htdocs\yii2adv\frontend\views\task-manager\view.php:22
+Stack trace:
+#0 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\Data\\xampp\\h...', Array)
+#2 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\Data\\xampp\\h...', Array, NULL)
+#3 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\widgets\ListView.php(191): yii\base\View->render('view', Array)
+#4 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\widgets\ListView.php(124): yii\widgets\ListView->renderItem(Object(common\models\tables\Tasks), 2, 0)
+#5 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\widgets\ListView->renderItems()
+#6 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\widgets\BaseListView->renderSection('{items}')
+#7 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#8 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#9 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Widget.php(140): yii\widgets\BaseListView->run()
+#10 C:\Data\xampp\htdocs\yii2adv\frontend\views\task-manager\index.php(36): yii\base\Widget::widget(Array)
+#11 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\View.php(348): require('C:\\Data\\xampp\\h...')
+#12 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\Data\\xampp\\h...', Array)
+#13 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\Data\\xampp\\h...', Array, Object(frontend\controllers\TaskManagerController))
+#14 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\TaskManagerController))
+#15 C:\Data\xampp\htdocs\yii2adv\frontend\controllers\TaskManagerController.php(78): yii\base\Controller->render('index', Array)
+#16 [internal function]: frontend\controllers\TaskManagerController->actionIndex()
+#17 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#18 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#20 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task-manager', Array)
+#21 C:\Data\xampp\htdocs\yii2adv\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 C:\Data\xampp\htdocs\yii2adv\frontend\web\index.php(17): yii\base\Application->run()
+#23 {main}
+2019-06-21 07:31:44 [::1][1][dj3q530plv17i5g34j3sni0to1][info][application] $_GET = [
+    'r' => 'task-manager'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Phpstorm-8b91aacf' => 'd6ca3562-dd80-42f1-8869-5f5bbda5d444'
+    'XDEBUG_SESSION' => 'XDEBUG_ECLIPSE'
+    'PHPSESSID' => 'fcrv8ik0fpsab03dus6591oq1r'
+    '_identity' => '9c4545b88e03a3bc71af2be96a764dd14f0bb4244bb79557b4a7b743bbf3b6e5a:2:{i:0;s:9:\"_identity\";i:1;s:22:\"[1,\"test1key\",2592000]\";}'
+    '_csrf' => 'b65f7c34aa2b8bb989d282489e6094aeb7930021c4862964de48833763adc860a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JgJqVCLBEVro2EfSKamqi_t_bDRn7ZO_\";}'
+    'advanced-frontend' => 'dj3q530plv17i5g34j3sni0to1'
+    '_identity-frontend' => '08aa3b694b18ffe64f4d925aae3bab9aa255f387c4d799c7f70a7659ad22c6f3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"_MwODlbbxweEMwcG14oy19wmggD8deIk\",2592000]\";}'
+    '_csrf-frontend' => 'd263fdefe3fbda90d82883613bcbdc2761c796d7cdac62710d90d053e3921f35a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FU_JouR2kR44YnfGOJ8I3kGxNR8sBesb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/Data/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/Data/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'Phpstorm-8b91aacf=d6ca3562-dd80-42f1-8869-5f5bbda5d444; XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=fcrv8ik0fpsab03dus6591oq1r; _identity=9c4545b88e03a3bc71af2be96a764dd14f0bb4244bb79557b4a7b743bbf3b6e5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A22%3A%22%5B1%2C%22test1key%22%2C2592000%5D%22%3B%7D; _csrf=b65f7c34aa2b8bb989d282489e6094aeb7930021c4862964de48833763adc860a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JgJqVCLBEVro2EfSKamqi_t_bDRn7ZO_%22%3B%7D; advanced-frontend=dj3q530plv17i5g34j3sni0to1; _identity-frontend=08aa3b694b18ffe64f4d925aae3bab9aa255f387c4d799c7f70a7659ad22c6f3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22_MwODlbbxweEMwcG14oy19wmggD8deIk%22%2C2592000%5D%22%3B%7D; _csrf-frontend=d263fdefe3fbda90d82883613bcbdc2761c796d7cdac62710d90d053e3921f35a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FU_JouR2kR44YnfGOJ8I3kGxNR8sBesb%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\MySQL\\MySQL Server 5.5\\bin;C:\\Users\\post.user14\\AppData\\Roaming\\npm;C:\\Users\\post.user14\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Data\\composer;C:\\Users\\post.user14\\AppData\\Local\\Programs\\Git\\cmd;C:\\Data\\xampp\\php'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win32) OpenSSL/1.1.1a PHP/7.2.15 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win32) OpenSSL/1.1.1a PHP/7.2.15'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Data/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Data/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Data/xampp/htdocs/yii2adv/frontend/web/index.php'
+    'REMOTE_PORT' => '64594'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=task-manager'
+    'REQUEST_URI' => '/yii2adv/frontend/web/index.php?r=task-manager'
+    'SCRIPT_NAME' => '/yii2adv/frontend/web/index.php'
+    'PHP_SELF' => '/yii2adv/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1561095104.145
+    'REQUEST_TIME' => 1561095104
+]
+2019-06-21 07:43:47 [::1][1][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\Data\xampp\htdocs\yii2adv\frontend/common/translations/ru/app.php
+    in C:\Data\xampp\htdocs\yii2adv\frontend\views\task-manager\index.php:13
+    in C:\Data\xampp\htdocs\yii2adv\frontend\controllers\TaskManagerController.php:78
+2019-06-21 07:43:46 [::1][1][-][info][application] $_GET = [
+    'r' => 'task-manager'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Phpstorm-8b91aacf' => 'd6ca3562-dd80-42f1-8869-5f5bbda5d444'
+    'XDEBUG_SESSION' => 'XDEBUG_ECLIPSE'
+    'PHPSESSID' => 'fcrv8ik0fpsab03dus6591oq1r'
+    '_identity' => '9c4545b88e03a3bc71af2be96a764dd14f0bb4244bb79557b4a7b743bbf3b6e5a:2:{i:0;s:9:\"_identity\";i:1;s:22:\"[1,\"test1key\",2592000]\";}'
+    '_csrf' => 'b65f7c34aa2b8bb989d282489e6094aeb7930021c4862964de48833763adc860a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JgJqVCLBEVro2EfSKamqi_t_bDRn7ZO_\";}'
+    'advanced-frontend' => 'dj3q530plv17i5g34j3sni0to1'
+    '_identity-frontend' => '08aa3b694b18ffe64f4d925aae3bab9aa255f387c4d799c7f70a7659ad22c6f3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"_MwODlbbxweEMwcG14oy19wmggD8deIk\",2592000]\";}'
+    '_csrf-frontend' => 'a085ff720ad155ee585c409e4fbcb63cc0346b7d971b6f1e221137b120d93553a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"7HaUbJTxBxMx-3yMYq9yBkwy54sI1qa9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/Data/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/Data/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'Phpstorm-8b91aacf=d6ca3562-dd80-42f1-8869-5f5bbda5d444; XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=fcrv8ik0fpsab03dus6591oq1r; _identity=9c4545b88e03a3bc71af2be96a764dd14f0bb4244bb79557b4a7b743bbf3b6e5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A22%3A%22%5B1%2C%22test1key%22%2C2592000%5D%22%3B%7D; _csrf=b65f7c34aa2b8bb989d282489e6094aeb7930021c4862964de48833763adc860a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JgJqVCLBEVro2EfSKamqi_t_bDRn7ZO_%22%3B%7D; advanced-frontend=dj3q530plv17i5g34j3sni0to1; _identity-frontend=08aa3b694b18ffe64f4d925aae3bab9aa255f387c4d799c7f70a7659ad22c6f3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22_MwODlbbxweEMwcG14oy19wmggD8deIk%22%2C2592000%5D%22%3B%7D; _csrf-frontend=a085ff720ad155ee585c409e4fbcb63cc0346b7d971b6f1e221137b120d93553a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%227HaUbJTxBxMx-3yMYq9yBkwy54sI1qa9%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\MySQL\\MySQL Server 5.5\\bin;C:\\Users\\post.user14\\AppData\\Roaming\\npm;C:\\Users\\post.user14\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Data\\composer;C:\\Users\\post.user14\\AppData\\Local\\Programs\\Git\\cmd;C:\\Data\\xampp\\php'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Win32) OpenSSL/1.1.1a PHP/7.2.15 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Win32) OpenSSL/1.1.1a PHP/7.2.15'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Data/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Data/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Data/xampp/htdocs/yii2adv/frontend/web/index.php'
+    'REMOTE_PORT' => '64980'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=task-manager'
+    'REQUEST_URI' => '/yii2adv/frontend/web/index.php?r=task-manager'
+    'SCRIPT_NAME' => '/yii2adv/frontend/web/index.php'
+    'PHP_SELF' => '/yii2adv/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1561095825.811
+    'REQUEST_TIME' => 1561095825
+]
