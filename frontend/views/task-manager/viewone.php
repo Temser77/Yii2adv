@@ -81,7 +81,7 @@ switch ($model->status_id) {
                     <?php if (Yii::$app->user->isGuest): ?>
                         <?= Html::a(Yii::t('app', 'login_or_register'), ['site/login'], ['class' => 'small pull-left']) ?>
                     <?php endif; ?>
-                    <?= $form->field($modelComments, 'uploaded_file')->fileInput(['class' => 'field-comments-upload'])->label(false) ?>
+                    <?= $form->field($modelComments, 'uploaded_file_path')->fileInput(['class' => 'field-comments-upload'])->label(false) ?>
                     <?= Html::submitButton(Yii::t('app', 'send'), ['class' => 'btn btn-info pull-right field-comments-submit']) ?>
                     <?php ActiveForm::end(); ?>
 

@@ -47,6 +47,7 @@ class UploadedCommentImage extends Model
                 $filename = $this->file->name;
                 $filePath = Yii::getAlias("@commentsImg/$filename");
                 $this->file->saveAs($filePath);
+
                 Image::thumbnail($filePath, null, 100)
                     ->save(Yii::getAlias("@commentsImg/small/$filename"), ['quality' => 90]);
                 return $this->file->name;

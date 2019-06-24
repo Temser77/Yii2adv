@@ -373,13 +373,13 @@ div#w0.list-view {
      grid-row-start: 5;
  }
 
-.field-comments-uploaded_file {
+.field-comments-uploaded_file_path {
     grid-row-start: 4;
     grid-column-start: 1;
     margin-bottom: 0;
 }
 
-#comments-uploaded_file {
+#comments-uploaded_file_path {
     font-weight: 400;
     text-align: center;
     -webkit-user-select: none;

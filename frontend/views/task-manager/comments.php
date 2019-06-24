@@ -2,8 +2,8 @@
 
 use yii\helpers\Html;
 /* @var $model common\models\tables\Comments */
-$previewImgPath = Yii::getAlias('@web') . "/comments-img/small/" . $model->uploaded_file;
-$ImgPath = Yii::getAlias('@web') . "/comments-img/" . $model->uploaded_file;
+$previewImgPath = Yii::getAlias('@domain') . "/frontend/web/comments-img/small/" . $model->uploaded_file_path;
+$ImgPath = Yii::getAlias('@domain') . "/frontend/web/comments-img/" . $model->uploaded_file_path;
 ?>
 
 
@@ -22,7 +22,7 @@ $ImgPath = Yii::getAlias('@web') . "/comments-img/" . $model->uploaded_file;
                 <?=$model->description?>
             </p>
             <a data-fancybox="gallery" href="<?=$ImgPath?>">
-                <img class="img-fluid" src="<?=$previewImgPath?>" alt="<?=$model->uploaded_file?>">
+                <img class="img-fluid" src="<?=$previewImgPath?>" alt="<?=$model->uploaded_file_path?>">
             </a>
         </div>
         <div class="clearfix"></div>

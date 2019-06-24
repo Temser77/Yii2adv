@@ -141,6 +141,10 @@ class TaskManagerController extends Controller
         $authUser[] = Users::findOne(Yii::$app->user->id)->toArray(['id', 'username']);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            // Навешано событие просмотреть можно вот здесь
+            // common/components/CustomBootstrap->startEventHandlers
+
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
@@ -180,7 +184,7 @@ class TaskManagerController extends Controller
             return $this->redirect(['index']);
         }
 
-        $authUser[] = Users::findOne(['username' => Yii::$app->user->username])->toArray(['id', 'username']);
+        $authUser[] = Users::findOne(Yii::$app->user->id)->toArray(['id', 'username']);
 
         return $this->render('update', [
             'model' => $model,

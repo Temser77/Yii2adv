@@ -3,7 +3,7 @@ return [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
-        '@commentsImg' => '@app/web/comments-img',
+        '@commentsImg' => '@frontend/web/comments-img',
         '@domain' => 'http://localhost/yii2adv',
     ],
     'language' => 'ru',

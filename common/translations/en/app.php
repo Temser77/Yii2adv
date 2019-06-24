@@ -31,6 +31,7 @@ return [
     'Home' => 'Home',
     'About' => 'About',
     'Contact' => 'Contact',
+    'Signup' => 'Sign up',
     'Login' => 'Login',
     'Logout' => 'Logout',
     'comments' => 'Comments',

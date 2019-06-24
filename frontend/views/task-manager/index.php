@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php
 
     if ($this->beginCache($FilterCacheKey, [
-        'duration' => 5,
+        'duration' => 1,
         'variations' => Yii::$app->language,
     ])) {
     echo ListView::widget([
