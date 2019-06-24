@@ -82,6 +82,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
         return $this->redirect(Yii::$app->homeUrl);
+        echo '1';
         //return $this->render('index');
     }
 
