@@ -13,7 +13,7 @@ use yii\web\UploadedFile;
  * @property int $task_id
  * @property int $creator_id
  * @property string $created
- * @property UploadedFile $uploaded_file
+ * @property UploadedFile $uploaded_file_path
  *
  * @property Tasks $task
  * @property Users $creator
@@ -37,7 +37,7 @@ class Comments extends \yii\db\ActiveRecord
             [['description', 'task_id', 'creator_id'], 'required'],
             [['task_id', 'creator_id'], 'integer'],
             [['created'], 'safe'],
-            [['description', 'uploaded_file'], 'string', 'max' => 255],
+            [['description', 'uploaded_file_path'], 'string', 'max' => 255],
             [['task_id'], 'exist', 'skipOnError' => true, 'targetClass' => Tasks::class, 'targetAttribute' => ['task_id' => 'id']],
             [['creator_id'], 'exist', 'skipOnError' => true, 'targetClass' => Users::class, 'targetAttribute' => ['creator_id' => 'id']],
         ];
@@ -54,7 +54,7 @@ class Comments extends \yii\db\ActiveRecord
             'task_id' => Yii::t('app', 'comments_task_id'),
             'creator_id' => Yii::t('app', 'comments_creator_id'),
             'created' => Yii::t('app', 'comments_created'),
-            'uploaded_file' => 'Uploaded File',
+            'uploaded_file_path' => 'Uploaded File',
         ];
     }
 

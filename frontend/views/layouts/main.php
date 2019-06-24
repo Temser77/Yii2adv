@@ -9,8 +9,10 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
+use \frontend\assets\TaskAsset;
 
 AppAsset::register($this);
+TaskAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -53,6 +55,8 @@ AppAsset::register($this);
             . Html::endForm()
             . '</li>';
     }
+    $menuItems[] = ['label' => Html::img(Yii::getAlias('@domain') . '/frontend/web/img/en.jpg'), 'encode' => false, 'url' => ['site/language', 'language' => 'en']];
+    $menuItems[] = ['label' => Html::img(Yii::getAlias('@domain') . '/frontend/web/img/ru.jpg'), 'encode' => false, 'url' => ['site/language', 'language' => 'ru']];
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => $menuItems,

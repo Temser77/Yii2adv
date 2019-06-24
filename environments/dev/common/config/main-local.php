@@ -3,7 +3,8 @@ return [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
-        '@commentsImg' => '@app/web/comments-img'
+        '@commentsImg' => '@app/web/comments-img',
+        '@domain' => 'http://localhost/yii2adv',
     ],
     'language' => 'ru',
     'bootstrap' => ['custombootstrap'],
@@ -27,13 +28,25 @@ return [
             'translations' => [
                 'app*' => [
                     'class' => \yii\i18n\PhpMessageSource::class,
-                    'basePath' => '@app/common/translations'
+                    'basePath' => '@common/translations'
                 ]
             ]
 
         ],
         'custombootstrap' => [
             'class' => \common\components\CustomBootstrap::class
+        ],
+
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'rules' => [
+                //'tasks' => 'task/index',
+                //'task/<id:\d+>' => 'task/one',
+                //'task/<id:\w+>' => 'task/two',
+                //'GET task/<id>' => 'task/one',
+                //'POST task/<id>' =>  'task/two',
+            ],
         ],
 
     ],

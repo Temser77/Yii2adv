@@ -21,6 +21,7 @@ class CustomBootstrap extends Component
         parent::init();
         $this->startEventHandlers();
         $this->changeAppLanguage();
+        $this->setHomeUrl();
     }
 
     private function changeAppLanguage() {
@@ -42,6 +43,10 @@ class CustomBootstrap extends Component
                 ->setSubject('Вам поступила новая задача ' . $task->name)
                 ->send();
         });
+    }
+
+    private function setHomeUrl() {
+        Yii::$app->homeUrl = 'http://localhost/yii2adv/frontend/web/task-manager';
     }
 
 

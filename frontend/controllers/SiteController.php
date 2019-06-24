@@ -5,6 +5,7 @@ use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
+use yii\filters\PageCache;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -26,6 +27,12 @@ class SiteController extends Controller
     public function behaviors()
     {
         return [
+            'cache' => [
+                'class' => PageCache::class,
+                'only' => ['about'],
+                'duration' => 86400,
+                'variations' => [Yii::$app->language]
+            ],
             'access' => [
                 'class' => AccessControl::className(),
                 'only' => ['logout', 'signup'],
@@ -74,7 +81,13 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        return $this->redirect(Yii::$app->homeUrl);
+        //return $this->render('index');
+    }
+
+    public function actionLanguage($language) {
+        Yii::$app->session->set('language', $language);
+        return $this->redirect(Yii::$app->request->referrer ?: Yii::$app->homeUrl);
     }
 
     /**
